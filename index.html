@@ -24,7 +24,14 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+
+<h1> Login</h1>
+<form>
+    <input type="text" required placeholder="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" autofocus class="login-form">
+    <input type="password" required placeholder="password" class="login-form"/>
+    <button type="submit" class="login-form">Login</button>
+</form>
+
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -36,7 +43,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141780662-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
   gtag('js', new Date());
 
   gtag('config', 'UA-141780662-2');
